@@ -1,7 +1,9 @@
 <template>
+  <navegacion />
   <img
     alt="AJ-Wi"
     src="https://github.com/AJ-Wi/AJ-Wi.github.io/blob/master/images/AJ-Wi.svg"
+    class="logo"
   />
   <h1>AJ Web Components Vue</h1>
   <h2>Custom Inputs!</h2>
@@ -22,12 +24,14 @@
 <script>
 import BaseInput from "@/components/BaseInput.vue";
 import training from "@/components/BaseSVG.vue";
+import navegacion from "@/components/BaseMenu.vue";
 
 export default {
   name: "App",
   components: {
     BaseInput,
     training,
+    navegacion,
   },
   data() {
     return {
@@ -55,5 +59,10 @@ export default {
 }
 h1 {
   text-align: center;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 70px;
 }
 </style>
